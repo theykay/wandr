@@ -11,7 +11,7 @@
     "start:client": "cd client && yarn start",
     "dev": "concurrently \"yarn start:server\" \"yarn start:client\"",
     "seed": "node server/seeders/seed.js",
-    "install": "cd client && yarn install",
+    "installment": "cd client && yarn install",
     "build": "cd client && yarn build",
     "heroku-postbuild": "yarn seed && yarn build"
   },
