@@ -1,0 +1,8 @@
+{
+  "name": "wandr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:theykay/wandr.git",
+  "author": "TheyKay <kaybmurray@gmail.com>",
+  "license": "MIT"
+}
