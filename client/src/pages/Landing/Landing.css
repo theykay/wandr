@@ -1,0 +1,20 @@
+h1 {
+  color: black;
+  background-color: pink;
+}
+
+.logo {
+  fill: teal;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-main {
+  width: 10rem;
+  padding: 
+}

@@ -8,22 +8,24 @@ import {
   Profile,
   Saved,
   Search,
-  Signup
+  Signup,
+  Default
 } from './pages';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path="/" component={Landing}/>
-          <Route exact path="/login" component={Login}/>
-          <Route exact path="/signup" component={Signup}/>
-          <Route exact path="/profile" component={Profile}/>
-          <Route exact path="/feed" component={Feed}/>
-          <Route exact path="/calendar" component={Calendar}/>
-          <Route exact path="/saved" component={Saved}/>
-          <Route exact path="/search" component={Search}/>
+          <Route exact path="/welcome" element={<Landing />} />
+          <Route exact path="/login" element={<Login />}/>
+          <Route exact path="/signup" element={<Signup />}/>
+          <Route exact path="/profile" element={<Profile />}/>
+          <Route exact path="/feed" element={<Feed />}/>
+          <Route exact path="/calendar" element={<Calendar />}/>
+          <Route exact path="/saved" element={<Saved />}/>
+          <Route exact path="/search" element={<Search />}/>
+          <Route path="*" element={<Default />}/>
         </Routes>
       </Router>
     </div>
